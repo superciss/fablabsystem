@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="{{ asset('css/loginpage.css') }}">
+    <link rel="stylesheet" href="public/css/loginpage.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
@@ -18,7 +18,7 @@
         </a>
         <div class="left-side">
             <div class="logo">
-                <img src="{{ asset('images/logo.png') }}" alt="FABLAB Logo" class="logo-img">
+                <img src="public/images/logo.png" alt="FABLAB Logo" class="logo-img">
                 <p>Innovation • Creation • Collaboration</p>
             </div>
         </div>
