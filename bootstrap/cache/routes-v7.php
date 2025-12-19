@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::21IrJV24AwGUPVJt',
+            '_route' => 'generated::lbMjMcMtkrbVJp9N',
           ),
           1 => NULL,
           2 => 
@@ -53,7 +53,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4qxhIWlGdplCnSQH',
+            '_route' => 'generated::szN48e9a87hlhYCl',
           ),
           1 => NULL,
           2 => 
@@ -109,7 +109,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::fhjTizkQpmh4F7PB',
+            '_route' => 'generated::fgaMm5Fmamus2PCN',
           ),
           1 => NULL,
           2 => 
@@ -145,7 +145,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::waSd33IaKZ4N15c0',
+            '_route' => 'generated::xnLv06bM2SMPbzOv',
           ),
           1 => NULL,
           2 => 
@@ -3710,7 +3710,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::wYCt6mPOJhBNFoa9',
+            '_route' => 'generated::N73nicWS9SgT2X6v',
           ),
           1 => 
           array (
@@ -3782,7 +3782,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::21IrJV24AwGUPVJt' => 
+    'generated::lbMjMcMtkrbVJp9N' => 
     array (
       'methods' => 
       array (
@@ -3792,7 +3792,7 @@ app('router')->setCompiledRoutes(
       'uri' => 'up',
       'action' => 
       array (
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:859:"function () {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:838:"function () {
                     $exception = null;
 
                     try {
@@ -3807,11 +3807,11 @@ app('router')->setCompiledRoutes(
                         $exception = $e->getMessage();
                     }
 
-                    return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\KEVLAR\\\\Capstone project-1.1\\\\CapstoneProject-1\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
+                    return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\Francis\\\\Downloads\\\\fablab\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000004dd0000000000000000";}}',
-        'as' => 'generated::21IrJV24AwGUPVJt',
+        'as' => 'generated::lbMjMcMtkrbVJp9N',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3878,7 +3878,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4qxhIWlGdplCnSQH' => 
+    'generated::szN48e9a87hlhYCl' => 
     array (
       'methods' => 
       array (
@@ -3899,7 +3899,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4qxhIWlGdplCnSQH',
+        'as' => 'generated::szN48e9a87hlhYCl',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3990,7 +3990,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::fhjTizkQpmh4F7PB' => 
+    'generated::fgaMm5Fmamus2PCN' => 
     array (
       'methods' => 
       array (
@@ -4011,7 +4011,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::fhjTizkQpmh4F7PB',
+        'as' => 'generated::fgaMm5Fmamus2PCN',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4065,7 +4065,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::waSd33IaKZ4N15c0' => 
+    'generated::xnLv06bM2SMPbzOv' => 
     array (
       'methods' => 
       array (
@@ -4086,7 +4086,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::waSd33IaKZ4N15c0',
+        'as' => 'generated::xnLv06bM2SMPbzOv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -10402,7 +10402,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::wYCt6mPOJhBNFoa9' => 
+    'generated::N73nicWS9SgT2X6v' => 
     array (
       'methods' => 
       array (
@@ -10425,7 +10425,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::wYCt6mPOJhBNFoa9',
+        'as' => 'generated::N73nicWS9SgT2X6v',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11163,7 +11163,7 @@ app('router')->setCompiledRoutes(
       'uri' => 'storage/{path}',
       'action' => 
       array (
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:3:{s:4:"disk";s:5:"local";s:6:"config";a:5:{s:6:"driver";s:5:"local";s:4:"root";s:74:"C:\\Users\\KEVLAR\\Capstone project-1.1\\CapstoneProject-1\\storage\\app/private";s:5:"serve";b:1;s:5:"throw";b:0;s:6:"report";b:0;}s:12:"isProduction";b:0;}s:8:"function";s:323:"function (\\Illuminate\\Http\\Request $request, string $path) use ($disk, $config, $isProduction) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:3:{s:4:"disk";s:5:"local";s:6:"config";a:5:{s:6:"driver";s:5:"local";s:4:"root";s:53:"C:\\Users\\Francis\\Downloads\\fablab\\storage\\app/private";s:5:"serve";b:1;s:5:"throw";b:0;s:6:"report";b:0;}s:12:"isProduction";b:0;}s:8:"function";s:323:"function (\\Illuminate\\Http\\Request $request, string $path) use ($disk, $config, $isProduction) {
                     return (new \\Illuminate\\Filesystem\\ServeFile(
                         $disk,
                         $config,
