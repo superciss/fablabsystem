@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="{{ asset('css/staffdashboard.css') }}">
+    <link rel="stylesheet" href="public/css/staffdashboard.css">
 </head>
 <body>
     <div id="sidebarBackdrop" class="sidebar-backdrop hide"></div>
@@ -128,7 +128,7 @@
                             <div class="dropdown profile-dropdown">
                                 <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" 
                                    id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="{{ asset('images/profile.png') }}" alt="Profile" 
+                                    <img src="public/images/profile.png" alt="Profile" 
                                          width="35" height="35" class="rounded-circle me-2" style="object-fit: cover;">
                                     <span class="fw-semibold">My Profile</span>
                                 </a>

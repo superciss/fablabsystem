@@ -237,7 +237,7 @@
     // ✅ When clicking "View"
     function viewImages(frontUrl, backUrl) {
         frontImage = frontUrl;
-        backImage = backUrl || "{{ asset('images/no-image.png') }}";
+        backImage = backUrl || "public/images/no-image.png";
         currentView = 'front';
 
         const preview = document.getElementById('mainPreview');

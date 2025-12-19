@@ -17,7 +17,7 @@
     <link href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 
     <!-- Sidebar CSS -->
-    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+    <link rel="stylesheet" href="public/css/sidebar.css">
 
     @stack('styles')
 </head>
