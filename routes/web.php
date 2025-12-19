@@ -131,10 +131,10 @@ Route::prefix('admin')->middleware([CheckRole::class.':admin'])->group(function 
     Route::get('/notifications/list', [ProductController::class, 'list'])->name('notifications.list');
     Route::get('/admin/notification', [ProductController::class, 'index_notify'])->name('notifications.index_notify');
 
-    Route::get('/admin/raw-material', [App\Http\Controllers\admin\RawMaterialController::class, 'index'])->name('admin.materials.index');
-    Route::post('/admin/raw-material', [App\Http\Controllers\admin\RawMaterialController::class, 'store'])->name('material.store');
-    Route::put('/admin/raw-material/{prod}', [App\Http\Controllers\admin\RawMaterialController::class, 'update'])->name('material.update');
-    Route::delete('/admin/raw-material/{prod}', [App\Http\Controllers\admin\RawMaterialController::class, 'destroy'])->name('material.destroy');
+    Route::get('/admin/raw-material', [App\Http\Controllers\Admin\RawMaterialController::class, 'index'])->name('admin.materials.index');
+    Route::post('/admin/raw-material', [App\Http\Controllers\Admin\RawMaterialController::class, 'store'])->name('material.store');
+    Route::put('/admin/raw-material/{prod}', [App\Http\Controllers\Admin\RawMaterialController::class, 'update'])->name('material.update');
+    Route::delete('/admin/raw-material/{prod}', [App\Http\Controllers\Admin\RawMaterialController::class, 'destroy'])->name('material.destroy');
 
 
     Route::get('/machines', [App\Http\Controllers\admin\MachineController::class,'index'])->name('admin.machines.index');
