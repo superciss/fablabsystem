@@ -19,6 +19,334 @@
     <!-- Sidebar CSS -->
     <link rel="stylesheet" href="public/css/sidebar.css">
 
+    <style>
+        
+
+    .sidebar {
+        width: 280px;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        height: calc(100% - 56px); 
+        background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(55, 48, 163, 0.9) 50%, rgba(30, 64, 175, 0.9) 100%);
+        color: #fff;
+        padding: 0;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* User Card */
+    .user-card {
+        margin: 1.5rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #10b981, #059669);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .user-avatar i {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .user-name {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #ffffff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .user-role {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    /* Navigation */
+    .sidebar-nav {
+        flex: 1;
+        padding: 0 1.5rem;
+        overflow-y: auto;
+    }
+
+    .nav-section {
+        margin-bottom: 2rem;
+    }
+
+    .nav-section-title {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.75rem;
+        display: block;
+        padding-left: 0.5rem;
+    }
+
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin-bottom: 0.25rem;
+        position: relative;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        color: #cbd5e1;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        gap: 0.75rem;
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.08);
+        color: #ffffff;
+        transform: translateX(4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-link.active {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: #ffffff;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
+
+    .nav-link.active .nav-indicator {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .nav-icon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .nav-icon i {
+        font-size: 1.1rem;
+    }
+
+    .nav-text {
+        font-weight: 500;
+        font-size: 0.9rem;
+        flex-grow: 1;
+    }
+
+    .nav-indicator {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) scaleY(0);
+        width: 3px;
+        height: 20px;
+        background: #ffffff;
+        border-radius: 2px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Dropdown Styles */
+    .dropdown-toggle {
+        position: relative;
+    }
+
+    .dropdown-arrow {
+        font-size: 0.8rem;
+        transition: transform 0.3s ease;
+        margin-left: auto;
+    }
+
+    .dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0 0.5rem 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        width: calc(100% - 1rem);
+    }
+
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        color: #cbd5e1;
+        text-decoration: none;
+        gap: 0.75rem;
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+        border-left: 3px solid transparent;
+    }
+
+    .dropdown-item i {
+        width: 20px;
+        text-align: center;
+    }
+
+    .dropdown-item:hover {
+        background: rgba(255, 255, 255, 0.05);
+        color: #ffffff;
+        border-left: 3px solid #3b82f6;
+        padding-left: 1.25rem;
+    }
+
+    .dropdown-item.active {
+        background: rgba(59, 130, 246, 0.2);
+        color: #ffffff;
+        border-left: 3px solid #3b82f6;
+    }
+
+    /* Footer */
+    .sidebar-footer {
+        padding: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: auto;
+    }
+
+    .logout-form {
+        margin: 0;
+    }
+
+    .logout-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        background: rgba(239, 68, 68, 0.1);
+        border: 1px solid rgba(239, 68, 68, 0.2);
+        border-radius: 10px;
+        color: #fca5a5;
+        font-weight: 500;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .logout-btn:hover {
+        background: rgba(239, 68, 68, 0.2);
+        color: #ffffff;
+        border-color: rgba(239, 68, 68, 0.4);
+        transform: translateY(-1px);
+    }
+
+    /* Scrollbar Styling */
+    .sidebar::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .sidebar::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .sidebar {
+            width: 100%;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .sidebar.open {
+            transform: translateX(0);
+        }
+    }
+
+    /* Collapsed Sidebar (desktop) */
+.sidebar.collapsed {
+    width: 70px;
+    overflow-x: hidden;
+}
+
+.sidebar.collapsed .user-card,
+.sidebar.collapsed .nav-text,
+.sidebar.collapsed .nav-section-title,
+.sidebar.collapsed .dropdown-menu {
+    display: none;
+}
+
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.sidebar.collapsed .nav-icon {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    #sidebarToggle { display: none !important; }
+}
+
+    </style>
+
     @stack('styles')
 </head>
 <body>
