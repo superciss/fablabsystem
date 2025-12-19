@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <img src="{{ asset('images/logo.png') }}" alt="FABLAB Logo" class="hero-logo" style="width: 400px; height: auto; animation: float 6s ease-in-out infinite;">
+                        <img src="public/images/logo.png" alt="FABLAB Logo" class="hero-logo" style="width: 400px; height: auto; animation: float 6s ease-in-out infinite;">
                     </div>
                 </div>
             </div>
