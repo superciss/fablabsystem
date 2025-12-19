@@ -34,12 +34,12 @@ use App\Http\Controllers\Staff\StaffReportController;
 use App\Http\Controllers\Staff\StaffNotificationController;
 
 //customer
-use App\Http\Controllers\customer\CustomerDashboardController;
-use App\Http\Controllers\customer\CustomerNotifyController;
-use App\Http\Controllers\customer\CustomerShopController;
-use App\Http\Controllers\customer\CustomerOrderController;
-use App\Http\Controllers\customer\CartController;
-use App\Http\Controllers\customer\CustomizationController;
+use App\Http\Controllers\Customer\CustomerDashboardController;
+use App\Http\Controllers\Customer\CustomerNotifyController;
+use App\Http\Controllers\Customer\CustomerShopController;
+use App\Http\Controllers\Customer\CustomerOrderController;
+use App\Http\Controllers\Customer\CartController;
+use App\Http\Controllers\Customer\CustomizationController;
 
 //checker
 use App\Http\Middleware\RedirectIfAuthenticated;
